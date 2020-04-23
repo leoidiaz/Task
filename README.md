@@ -1,4 +1,8 @@
 # Task
+<p align = "center">
+<img src= "screenshots/task1.png" width = "300">
+<img src = "screenshots/task2.png" width = "300">
+</p>
 ## Level 2
 Students will build a simple task tracking app to practice project planning, progress tracking, MVC separation, intermediate table view features, and Core Data.
 Students who complete this project independently are able to:
