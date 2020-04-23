@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294160632450DDC5003110EC /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294160622450DDC5003110EC /* TaskListTableViewController.swift */; };
+		294160652450DEB4003110EC /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294160642450DEB4003110EC /* TaskDetailTableViewController.swift */; };
+		294160672450DF0C003110EC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294160662450DF0C003110EC /* CoreDataStack.swift */; };
+		294160692450E068003110EC /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294160682450E068003110EC /* Task+Convenience.swift */; };
+		2941606B2450E227003110EC /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2941606A2450E227003110EC /* TaskController.swift */; };
+		2941606E2450F265003110EC /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2941606D2450F265003110EC /* DateHelpers.swift */; };
+		294160712450FA7B003110EC /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294160702450FA7B003110EC /* ButtonTableViewCell.swift */; };
 		FB4BD1A7237A1D88006648A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BD1A6237A1D88006648A7 /* AppDelegate.swift */; };
 		FB4BD1A9237A1D88006648A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BD1A8237A1D88006648A7 /* SceneDelegate.swift */; };
 		FB4BD1AE237A1D88006648A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4BD1AC237A1D88006648A7 /* Main.storyboard */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		294160622450DDC5003110EC /* TaskListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
+		294160642450DEB4003110EC /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailTableViewController.swift; sourceTree = "<group>"; };
+		294160662450DF0C003110EC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		294160682450E068003110EC /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
+		2941606A2450E227003110EC /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		2941606D2450F265003110EC /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		294160702450FA7B003110EC /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		FB4BD1A3237A1D88006648A7 /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4BD1A6237A1D88006648A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4BD1A8237A1D88006648A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2941605D2450DD53003110EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2941605F2450DD63003110EC /* View Controllers */,
+				2941605E2450DD5D003110EC /* Model Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2941605E2450DD5D003110EC /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2941606A2450E227003110EC /* TaskController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		2941605F2450DD63003110EC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2941606F2450F9F7003110EC /* Custom View */,
+				294160622450DDC5003110EC /* TaskListTableViewController.swift */,
+				294160642450DEB4003110EC /* TaskDetailTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2941606C2450F245003110EC /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				2941606D2450F265003110EC /* DateHelpers.swift */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		2941606F2450F9F7003110EC /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				294160702450FA7B003110EC /* ButtonTableViewCell.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
 		FB4BD19A237A1D88006648A7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +113,8 @@
 		FB4BD1A5237A1D88006648A7 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				2941606C2450F245003110EC /* Helper Files */,
+				2941605D2450DD53003110EC /* Controllers */,
 				FB4BD1BE237A1E0B006648A7 /* Model */,
 				FB4BD1BF237A1E11006648A7 /* Storyboards */,
 				FB4BD1BD237A1E00006648A7 /* Resources */,
@@ -78,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				FB4BD1AF237A1D88006648A7 /* Task.xcdatamodeld */,
+				294160662450DF0C003110EC /* CoreDataStack.swift */,
+				294160682450E068003110EC /* Task+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,7 +225,14 @@
 			files = (
 				FB4BD1B1237A1D88006648A7 /* Task.xcdatamodeld in Sources */,
 				FB4BD1A7237A1D88006648A7 /* AppDelegate.swift in Sources */,
+				294160632450DDC5003110EC /* TaskListTableViewController.swift in Sources */,
+				294160692450E068003110EC /* Task+Convenience.swift in Sources */,
+				294160672450DF0C003110EC /* CoreDataStack.swift in Sources */,
+				294160652450DEB4003110EC /* TaskDetailTableViewController.swift in Sources */,
+				2941606B2450E227003110EC /* TaskController.swift in Sources */,
+				294160712450FA7B003110EC /* ButtonTableViewCell.swift in Sources */,
 				FB4BD1A9237A1D88006648A7 /* SceneDelegate.swift in Sources */,
+				2941606E2450F265003110EC /* DateHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
